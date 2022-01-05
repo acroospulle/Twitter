@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func onLoginButton(_ sender: Any) {
+        TwitterAPICaller.client?.login(url: <#T##String#>, success: <#T##() -> ()#>, failure: <#T##(Error) -> ()#>)
+        
     }
     
 
