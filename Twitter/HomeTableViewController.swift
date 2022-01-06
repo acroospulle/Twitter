@@ -15,6 +15,7 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadTweet()
         
     }
     
@@ -31,6 +32,8 @@ class HomeTableViewController: UITableViewController {
             for tweet in tweets {
                 self.tweetArray.append(tweet)
             }
+            
+            self.tableView.reloadData()
             
         }, failure: { (Error) in
             print("Could not retreive tweets! oh no!!")
