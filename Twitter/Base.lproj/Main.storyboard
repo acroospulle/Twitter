@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="DOk-jB-6mL">
             <objects>
-                <viewController id="ilW-BV-RWV" customClass="LoginViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ilW-BV-RWV" customClass="LoginViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQt-iW-LcC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,12 +49,12 @@
             </objects>
             <point key="canvasLocation" x="125.59999999999999" y="113.79310344827587"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="Hln-ls-utf">
             <objects>
-                <tableViewController id="yct-Ne-rIT" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="yct-Ne-rIT" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cGL-1h-oah">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -72,7 +72,7 @@
                             <outlet property="delegate" destination="yct-Ne-rIT" id="rBc-qK-tdg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="sbY-CR-Hjx"/>
+                    <navigationItem key="navigationItem" title="Home" id="sbY-CR-Hjx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apq-EN-dzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,10 +81,18 @@
         <!--Navigation Controller-->
         <scene sceneID="oyi-d0-bIc">
             <objects>
-                <navigationController id="NYU-6p-l4x" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="NYU-6p-l4x" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="80i-kk-0Ar">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
                         <segue destination="yct-Ne-rIT" kind="relationship" relationship="rootViewController" id="STM-xR-FlL"/>
