@@ -10,6 +10,9 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
+    var tweetArray = [NSDictionary]()
+    var numberOfTweet: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
