@@ -120,6 +120,7 @@
                             <outlet property="delegate" destination="yct-Ne-rIT" id="rBc-qK-tdg"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Home" id="sbY-CR-Hjx">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="a26-eT-O4K" colorLabel="IBBuiltInLabel-Blue">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,7 +128,11 @@
                                 <action selector="onLogout:" destination="yct-Ne-rIT" id="Y0Q-Ig-a9C"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="BV7-ST-yGK">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apq-EN-dzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
