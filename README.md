@@ -46,3 +46,6 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
+![CG8njlfkqh](https://user-images.githubusercontent.com/79591114/148559180-a74dfc7a-9771-4bf0-be2d-a1a62aaf32ad.gif)
+
