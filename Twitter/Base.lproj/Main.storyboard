@@ -143,17 +143,13 @@
         <scene sceneID="tjq-hZ-Lcd">
             <objects>
                 <viewController id="xNB-GH-lvC" customClass="TweetViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="3by-6R-CZQ">
+                    <view key="view" contentMode="scaleToFill" id="3by-6R-CZQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G79-VE-Qep">
-                                <rect key="frame" x="0.0" y="88" width="240" height="318"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jJu-FL-ilB">
+                                <rect key="frame" x="20" y="80" width="307" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="EFN-sh-Vcp"/>
-                                    <constraint firstAttribute="height" constant="128" id="uMK-wW-TNk"/>
-                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -162,10 +158,8 @@
                         <viewLayoutGuide key="safeArea" id="KWj-d4-l7a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KWj-d4-l7a" firstAttribute="bottom" secondItem="G79-VE-Qep" secondAttribute="bottom" constant="456" id="4D6-ql-3oF"/>
-                            <constraint firstItem="G79-VE-Qep" firstAttribute="leading" secondItem="KWj-d4-l7a" secondAttribute="leading" id="hnF-sh-46N"/>
-                            <constraint firstItem="G79-VE-Qep" firstAttribute="top" secondItem="KWj-d4-l7a" secondAttribute="top" id="pcW-np-mQp"/>
-                            <constraint firstItem="KWj-d4-l7a" firstAttribute="trailing" secondItem="G79-VE-Qep" secondAttribute="trailing" id="xyN-6f-dCq"/>
+                            <constraint firstItem="jJu-FL-ilB" firstAttribute="top" secondItem="KWj-d4-l7a" secondAttribute="top" id="dmW-Og-Apy"/>
+                            <constraint firstItem="jJu-FL-ilB" firstAttribute="leading" secondItem="KWj-d4-l7a" secondAttribute="leading" id="ojM-uV-iHi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7yH-o0-11K">
@@ -182,6 +176,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tweetTextView" destination="jJu-FL-ilB" id="5uG-0m-b5V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pw5-t8-r4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
