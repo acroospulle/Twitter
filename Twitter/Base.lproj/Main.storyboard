@@ -165,7 +165,11 @@
                             <constraint firstItem="KWj-d4-l7a" firstAttribute="trailing" secondItem="G79-VE-Qep" secondAttribute="trailing" id="xyN-6f-dCq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7yH-o0-11K"/>
+                    <navigationItem key="navigationItem" id="7yH-o0-11K">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Enf-eV-pLo">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pw5-t8-r4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
