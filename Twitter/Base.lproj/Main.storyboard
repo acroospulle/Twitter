@@ -166,8 +166,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7yH-o0-11K">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Enf-eV-pLo">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Enf-eV-pLo">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancel:" destination="xNB-GH-lvC" id="a06-8l-goj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="92Q-oK-i7I">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tweet:" destination="xNB-GH-lvC" id="6hu-tQ-D9B"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
