@@ -15,6 +15,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
+![sJXpIkgi63](https://user-images.githubusercontent.com/79591114/148801189-c85b241d-c869-443a-9ed4-4633492ed345.gif)
 
 
 
