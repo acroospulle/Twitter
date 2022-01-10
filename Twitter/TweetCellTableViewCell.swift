@@ -22,8 +22,27 @@ class TweetCellTableViewCell: UITableViewCell {
     @IBOutlet weak var favButton: UIButton!
     
     
+    var favorited: Bool = false
+    var tweetId: Int = -1
+    
     
     @IBAction func favoriteTweet(_ sender: Any) {
+        let toBeFavorited = !favorited
+        if (toBeFavorited) {
+            TwitterAPICaller.client?.favoriteTweet(tweetId: tweetId, success: {
+                self.setFavorite(true)
+            }, failure: { (error) in
+                print("Favorite did not succeed: \(error)")
+            })
+        } else {
+            TwitterAPICaller.client?.unfavoriteTweet(tweetId: tweetId, success: {
+                self.setFavorite(false)
+            }, failure: { (error) in
+                print("Unfavorite did not succeed: \(error)")
+            })
+        }
+        
+        
     }
     
     
@@ -32,7 +51,7 @@ class TweetCellTableViewCell: UITableViewCell {
     }
     
     
-    var favorited: Bool = false
+   
     
     func setFavorite(_ isFavorite:Bool){
         favorited = isFavorite
