@@ -1,4 +1,4 @@
-# Twitter - Part II
+# Twitter Clone - Part II
 
 
 ## User Stories
@@ -24,7 +24,7 @@ Here's a walkthrough of implemented user stories:
 
 
 
-# Twitter - Part I
+# Twitter Clone - Part I
 
 ## User Stories
 
